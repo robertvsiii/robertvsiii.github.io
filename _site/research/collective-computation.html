@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Collective computation in biological populations | Bobby Marsland: Theoretical Biophysicist</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Collective computation in biological populations" />
+<meta name="author" content="Bobby Marsland" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Ecosystems may seem an unlikely substrate for sophisticated computation. But two key features make them a promising way for solving sophisticated machine learning problems based on constrained optimization. First of all, self-replication provides stable constraint enforcement. Stable coexistence requires that the environmental state satisfy a precise set of conditions, such that the population growth rates of all species are simultaneously zero. A slight deviation from this constraint will lead to exponential growth or decay of one or more population sizes, which in turn will modify the environment until these conditions are restored. Secondly, distributing the computation over a whole ecosystem provides automatic parallelization, which becomes particularly important for solving problems efficiently in high dimension." />
+<meta property="og:description" content="Ecosystems may seem an unlikely substrate for sophisticated computation. But two key features make them a promising way for solving sophisticated machine learning problems based on constrained optimization. First of all, self-replication provides stable constraint enforcement. Stable coexistence requires that the environmental state satisfy a precise set of conditions, such that the population growth rates of all species are simultaneously zero. A slight deviation from this constraint will lead to exponential growth or decay of one or more population sizes, which in turn will modify the environment until these conditions are restored. Secondly, distributing the computation over a whole ecosystem provides automatic parallelization, which becomes particularly important for solving problems efficiently in high dimension." />
+<link rel="canonical" href="http://localhost:4000/research/collective-computation" />
+<meta property="og:url" content="http://localhost:4000/research/collective-computation" />
+<meta property="og:site_name" content="Bobby Marsland: Theoretical Biophysicist" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-08-20T20:00:07-04:00" />
+<script type="application/ld+json">
+{"description":"Ecosystems may seem an unlikely substrate for sophisticated computation. But two key features make them a promising way for solving sophisticated machine learning problems based on constrained optimization. First of all, self-replication provides stable constraint enforcement. Stable coexistence requires that the environmental state satisfy a precise set of conditions, such that the population growth rates of all species are simultaneously zero. A slight deviation from this constraint will lead to exponential growth or decay of one or more population sizes, which in turn will modify the environment until these conditions are restored. Secondly, distributing the computation over a whole ecosystem provides automatic parallelization, which becomes particularly important for solving problems efficiently in high dimension.","headline":"Collective computation in biological populations","dateModified":"2019-08-20T20:00:07-04:00","datePublished":"2019-08-20T20:00:07-04:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/research/collective-computation"},"url":"http://localhost:4000/research/collective-computation","author":{"@type":"Person","name":"Bobby Marsland"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Bobby Marsland: Theoretical Biophysicist" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Bobby Marsland: Theoretical Biophysicist</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About Me</a><a class="page-link" href="/publications/">Publications</a><a class="page-link" href="/research.html">Research</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Collective computation in biological populations</h1>
+  </header>
+
+  <div class="post-content">
+    <p>Ecosystems may seem an unlikely substrate for sophisticated computation. But two key features make them a promising way for solving sophisticated machine learning problems based on constrained optimization. First of all, self-replication provides stable constraint enforcement. Stable coexistence requires that the environmental state satisfy a precise set of conditions, such that the population growth rates of all species are simultaneously zero. A slight deviation from this constraint will lead to exponential growth or decay of one or more population sizes, which in turn will modify the environment until these conditions are restored. Secondly, distributing the computation over a whole ecosystem provides automatic parallelization, which becomes particularly important for solving problems efficiently in high dimension.</p>
+
+<p>This intuition can be transformed into a precise mathematical duality, as my coauthors and I have shown here. The duality opens some interesting horizons for thinking about ecosystems and about classic machine learning problems, suggesting new observables for field ecologists and new algorithms for online learning.</p>
+
+<p>But is it possible to actually use an ecosystem to perform a computation? The adaptive immune system is a natural place to start. T cells are clearly performing a collective computation to determine whether a given antigen comes from a native protein or from a pathogen. I am currently investigating the possibility that the immune system is implementing a standard algorithm for outlier detection called a single-class support vector machine (SVM). My colleagues and I are using published proteomes of mammals and pathogens to determine whether my proposal is feasible under biologically realistic conditions.</p>
+
+<p>Natural ecosystems are unnecessarily complex and cumbersome, however, for implementing pre-defined computations. For this purpose, it is much more convenient to employ bare DNA, which can be efficiently replicated via the polymerase chain reaction (PCR), and has already been employed to implement sophisticated machine learning algorithms. I am currently developing a proposal for a general-purpose single-class SVM based on PCR and strand displacement reactions.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <!-- <h2 class="footer-heading">Bobby Marsland: Theoretical Biophysicist</h2> -->
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Bobby Marsland</li><li><a class="u-email" href="mailto:marsland@bu.edu">marsland@bu.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/robertvsiii"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">robertvsiii</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Postdoctoral Fellow in the Theoretical Biophysics Group at Boston University</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>

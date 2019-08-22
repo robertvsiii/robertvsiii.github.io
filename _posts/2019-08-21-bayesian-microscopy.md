@@ -1,6 +1,9 @@
 ---
 layout: "page"
 categories: research
+permalink: /:categories/bayesian-microscopy
+title: Bayesian analysis for small molecule sensors
+date: 2019-08-21 00:00:01
 ---
 
 The combination of gene editing and lattice light-sheet microscopy has opened a new era in cell biology. It is now possible, in principle, to fluorescently label any biologically relevant molecule and measure its dynamics across the whole cell in real time. Not only can proteins be labeled, by directly appending the code for a fluorescent domain to the gene of interest, but so can small molecules and ions, by hijacking the naturally occurring proteins that transduce information about their concentrations, using them to create artificial fluorescent probes. Stitching these sensors to other protein domains that specifically bind to different parts of the cell can provide additional spatial resolution, detecting even a small number of copies of the molecule of interest in the vicinity of a certain target structure. A number of small molecules such as cyclic AMP and phosophotidylinositol (PI) play crucial roles in signal transduction, and a complete understanding how the signal is processed requires careful measurements of their spatiotemporal dynamics in response to specific stimuli. 

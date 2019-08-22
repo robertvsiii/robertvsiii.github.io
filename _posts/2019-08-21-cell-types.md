@@ -1,6 +1,9 @@
 ---
 layout: "page"
 categories: research
+permalink: /:categories/cell-types
+title: Directed differentiation with Linear Algebra Projections
+date: 2019-08-21 00:00:02
 ---
 
 Induced pluripotent stem cells (iPSC’s) have generated considerable excitement for the future of regenerative medicine. Since these cells can be generated directly from readily accessible somatic patient cells, they can be used to grow new tissues and eventually organs with no risk of immune rejection. Coaxing the cells to differentiate into the desired tissue remains a major challenge, and the development of effective protocols is hampered by the fact that the success or failure of a given attempt is difficult to determine until the cells are delivered to a host. 
