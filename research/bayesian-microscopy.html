@@ -10,15 +10,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="The combination of gene editing and lattice light-sheet microscopy has opened a new era in cell biology. It is now possible, in principle, to fluorescently label any biologically relevant molecule and measure its dynamics across the whole cell in real time. Not only can proteins be labeled, by directly appending the code for a fluorescent domain to the gene of interest, but so can small molecules and ions, by hijacking the naturally occurring proteins that transduce information about their concentrations, using them to create artificial fluorescent probes. Stitching these sensors to other protein domains that specifically bind to different parts of the cell can provide additional spatial resolution, detecting even a small number of copies of the molecule of interest in the vicinity of a certain target structure. A number of small molecules such as cyclic AMP and phosophotidylinositol (PI) play crucial roles in signal transduction, and a complete understanding how the signal is processed requires careful measurements of their spatiotemporal dynamics in response to specific stimuli." />
 <meta property="og:description" content="The combination of gene editing and lattice light-sheet microscopy has opened a new era in cell biology. It is now possible, in principle, to fluorescently label any biologically relevant molecule and measure its dynamics across the whole cell in real time. Not only can proteins be labeled, by directly appending the code for a fluorescent domain to the gene of interest, but so can small molecules and ions, by hijacking the naturally occurring proteins that transduce information about their concentrations, using them to create artificial fluorescent probes. Stitching these sensors to other protein domains that specifically bind to different parts of the cell can provide additional spatial resolution, detecting even a small number of copies of the molecule of interest in the vicinity of a certain target structure. A number of small molecules such as cyclic AMP and phosophotidylinositol (PI) play crucial roles in signal transduction, and a complete understanding how the signal is processed requires careful measurements of their spatiotemporal dynamics in response to specific stimuli." />
-<link rel="canonical" href="http://localhost:4000/research/bayesian-microscopy" />
-<meta property="og:url" content="http://localhost:4000/research/bayesian-microscopy" />
+<link rel="canonical" href="/research/bayesian-microscopy" />
+<meta property="og:url" content="/research/bayesian-microscopy" />
 <meta property="og:site_name" content="Bobby Marsland: Theoretical Biophysicist" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-08-20T20:00:01-04:00" />
 <script type="application/ld+json">
-{"description":"The combination of gene editing and lattice light-sheet microscopy has opened a new era in cell biology. It is now possible, in principle, to fluorescently label any biologically relevant molecule and measure its dynamics across the whole cell in real time. Not only can proteins be labeled, by directly appending the code for a fluorescent domain to the gene of interest, but so can small molecules and ions, by hijacking the naturally occurring proteins that transduce information about their concentrations, using them to create artificial fluorescent probes. Stitching these sensors to other protein domains that specifically bind to different parts of the cell can provide additional spatial resolution, detecting even a small number of copies of the molecule of interest in the vicinity of a certain target structure. A number of small molecules such as cyclic AMP and phosophotidylinositol (PI) play crucial roles in signal transduction, and a complete understanding how the signal is processed requires careful measurements of their spatiotemporal dynamics in response to specific stimuli.","headline":"Bayesian analysis for small molecule sensors","dateModified":"2019-08-20T20:00:01-04:00","datePublished":"2019-08-20T20:00:01-04:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/research/bayesian-microscopy"},"url":"http://localhost:4000/research/bayesian-microscopy","author":{"@type":"Person","name":"Bobby Marsland"},"@context":"https://schema.org"}</script>
+{"description":"The combination of gene editing and lattice light-sheet microscopy has opened a new era in cell biology. It is now possible, in principle, to fluorescently label any biologically relevant molecule and measure its dynamics across the whole cell in real time. Not only can proteins be labeled, by directly appending the code for a fluorescent domain to the gene of interest, but so can small molecules and ions, by hijacking the naturally occurring proteins that transduce information about their concentrations, using them to create artificial fluorescent probes. Stitching these sensors to other protein domains that specifically bind to different parts of the cell can provide additional spatial resolution, detecting even a small number of copies of the molecule of interest in the vicinity of a certain target structure. A number of small molecules such as cyclic AMP and phosophotidylinositol (PI) play crucial roles in signal transduction, and a complete understanding how the signal is processed requires careful measurements of their spatiotemporal dynamics in response to specific stimuli.","@type":"BlogPosting","url":"/research/bayesian-microscopy","headline":"Bayesian analysis for small molecule sensors","dateModified":"2019-08-20T20:00:01-04:00","datePublished":"2019-08-20T20:00:01-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"/research/bayesian-microscopy"},"author":{"@type":"Person","name":"Bobby Marsland"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Bobby Marsland: Theoretical Biophysicist" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Bobby Marsland: Theoretical Biophysicist" /></head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Bobby Marsland: Theoretical Biophysicist</a><nav class="site-nav">
@@ -45,7 +45,34 @@
   <div class="post-content">
     <p>The combination of gene editing and lattice light-sheet microscopy has opened a new era in cell biology. It is now possible, in principle, to fluorescently label any biologically relevant molecule and measure its dynamics across the whole cell in real time. Not only can proteins be labeled, by directly appending the code for a fluorescent domain to the gene of interest, but so can small molecules and ions, by hijacking the naturally occurring proteins that transduce information about their concentrations, using them to create artificial fluorescent probes. Stitching these sensors to other protein domains that specifically bind to different parts of the cell can provide additional spatial resolution, detecting even a small number of copies of the molecule of interest in the vicinity of a certain target structure. A number of small molecules such as cyclic AMP and phosophotidylinositol (PI) play crucial roles in signal transduction, and a complete understanding how the signal is processed requires careful measurements of their spatiotemporal dynamics in response to specific stimuli.</p>
 
-<p>Inferring the dynamics of the molecules of interest from the observed behavior of the fluorescent probes, however, presents new challenges. The timescale of concentration changes in the molecule of interest can easily be comparable to the timescale for the probe to bind to its target, requiring a detailed kinetic model to back out the desired information. While it is usually straightforward to write down the kinetics for a well-characterized probe, the multi-domain molecules developed for the latest high-resolution measurements require a large number of unknown kinetic parameters, whose in vitro values do not necessarily reflect their behavior in the cytoplasm. Using these high-dimensional models correctly requires great care, because they easily give rise to “sloppy” directions in parameter space, which are unconstrained by the available data. I have developed some expertise in using Bayesian analysis to guide careful interpretation of the results of this kind of experiment, in the context of detecting phosphorylated PI molecules recruited to sites of clathrin-mediated endocytosis.</p>
+<p>Inferring the dynamics of the molecules of interest from the observed behavior of the fluorescent probes, however, presents new challenges. The timescale of concentration changes in the molecule of interest can easily be comparable to the timescale for the probe to bind to its target, requiring a detailed kinetic model to back out the desired information. While it is usually straightforward to write down the kinetics for a well-characterized probe, the multi-domain molecules developed for the latest high-resolution measurements require a large number of unknown kinetic parameters, whose in vitro values do not necessarily reflect their behavior in the cytoplasm. Using these high-dimensional models correctly requires great care, because they easily give rise to “sloppy” directions in parameter space, which are unconstrained by the available data. I have developed some expertise in using Bayesian analysis to guide careful interpretation of the results of this kind of experiment, in the context of detecting phosphorylated PI molecules recruited to sites of clathrin-mediated endocytosis <a href="#marsland2017edge">(Marsland III, 2017; He et al., 2017)</a>.</p>
+
+<ol class="bibliography"><li><span id="marsland2017edge">Marsland III, R. A. (2017). <i>The edge of thermodynamics: driven steady states in physics and biology</i> (PhD thesis). Massachusetts Institute of Technology.</span>
+    
+    <a href="https://dspace.mit.edu/handle/1721.1/112008"><button class="btn btnId btnPub--BibTex" id="b_marsland2017edge-url" style="outline:none;">Journal</button></a>
+    
+
+    
+    
+    
+    
+    
+
+    </li>
+<li><span id="he2017dynamics">He, K., Marsland III, R., Upadhyayula, S., Song, E., Dang, S., Capraro, B. R., … others. (2017). Dynamics of phosphoinositide conversion in clathrin-mediated endocytic traffic. <i>Nature</i>, <i>552</i>(7685), 410.</span>
+    
+    <a href="https://www.nature.com/articles/nature25146"><button class="btn btnId btnPub--BibTex" id="b_he2017dynamics-url" style="outline:none;">Journal</button></a>
+    
+
+    
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6263037/"><button class="btn btnId btnPub--BibTex" id="b_he2017dynamics-url" style="outline:none;">arXiv</button></a>
+    
+    
+    
+    
+    
+
+    </li></ol>
 
   </div>
 
