@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Relevant variables in microbial communities | Bobby Marsland: Theoretical Biophysicist</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Relevant variables in microbial communities" />
+<meta name="author" content="Bobby Marsland" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The concept of a “species” is notoriously ill-defined in the microbial realm. Instead of the sharp distinctions between different kinds of plants and animals we find in the macroscopic world, microbes manifest a fuzzier continuum of phenotypes. Given this blurriness, it should come as no surprise that it is difficult to predict “species”-level composition of microbial communities. But natural microbial communities do have sufficiently stable functional properties to be effectively utilized by macroscopic organisms to accomplish definite tasks. This means that there should be some community-level quantities that are reproducible and controllable, and some “relevant variables” that reliably control them, but what these quantities could be remains an open question." />
+<meta property="og:description" content="The concept of a “species” is notoriously ill-defined in the microbial realm. Instead of the sharp distinctions between different kinds of plants and animals we find in the macroscopic world, microbes manifest a fuzzier continuum of phenotypes. Given this blurriness, it should come as no surprise that it is difficult to predict “species”-level composition of microbial communities. But natural microbial communities do have sufficiently stable functional properties to be effectively utilized by macroscopic organisms to accomplish definite tasks. This means that there should be some community-level quantities that are reproducible and controllable, and some “relevant variables” that reliably control them, but what these quantities could be remains an open question." />
+<link rel="canonical" href="http://localhost:4000/research/microbiome-observables" />
+<meta property="og:url" content="http://localhost:4000/research/microbiome-observables" />
+<meta property="og:site_name" content="Bobby Marsland: Theoretical Biophysicist" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-08-20T20:00:05-04:00" />
+<script type="application/ld+json">
+{"description":"The concept of a “species” is notoriously ill-defined in the microbial realm. Instead of the sharp distinctions between different kinds of plants and animals we find in the macroscopic world, microbes manifest a fuzzier continuum of phenotypes. Given this blurriness, it should come as no surprise that it is difficult to predict “species”-level composition of microbial communities. But natural microbial communities do have sufficiently stable functional properties to be effectively utilized by macroscopic organisms to accomplish definite tasks. This means that there should be some community-level quantities that are reproducible and controllable, and some “relevant variables” that reliably control them, but what these quantities could be remains an open question.","headline":"Relevant variables in microbial communities","dateModified":"2019-08-20T20:00:05-04:00","datePublished":"2019-08-20T20:00:05-04:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/research/microbiome-observables"},"url":"http://localhost:4000/research/microbiome-observables","author":{"@type":"Person","name":"Bobby Marsland"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Bobby Marsland: Theoretical Biophysicist" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Bobby Marsland: Theoretical Biophysicist</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About Me</a><a class="page-link" href="/publications/">Publications</a><a class="page-link" href="/research.html">Research</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Relevant variables in microbial communities</h1>
+  </header>
+
+  <div class="post-content">
+    <p>The concept of a “species” is notoriously ill-defined in the microbial realm. Instead of the sharp distinctions between different kinds of plants and animals we find in the macroscopic world, microbes manifest a fuzzier continuum of phenotypes. Given this blurriness, it should come as no surprise that it is difficult to predict “species”-level composition of microbial communities. But natural microbial communities do have sufficiently stable functional properties to be effectively utilized by macroscopic organisms to accomplish definite tasks. This means that there should be some community-level quantities that are reproducible and controllable, and some “relevant variables” that reliably control them, but what these quantities could be remains an open question.</p>
+
+<p>I am currently following up on an observation by some of my colleagues that the composition of communities grown on single carbon sources is reproducible at a sufficiently high taxonomic level. Specifically, the family-level structure of the communities is sensitive to the choice of carbon source, but is strongly conserved for different communities, sampled from different field sites, when grown on the same carbon source. My first goal is to identify the chemical features of the carbon source that determine the community structure, using standard machine learning algorithms to predict community composition on novel carbon sources based on chemical similarity, and comparing these predictions with the measurements performed by my collaborators.</p>
+
+<p>The next step is to develop a method for inferring reproducible observables directly from the data, instead of using the historically contingent family groupings. An interesting theoretical procedure for this was proposed some time ago, using the eigenvectors of an individual-level, environment-specific interaction matrix. It is currently impossible to measure the entries of this matrix, however, and so practical implementation of this program requires a controlled procedure for estimating the matrix directly from the data. I am currently developing such a procedure, applying it to my collaborators’ data, and exploring other ways of obtaining meaningful functional groupings from the inferred matrix.</p>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <!-- <h2 class="footer-heading">Bobby Marsland: Theoretical Biophysicist</h2> -->
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Bobby Marsland</li><li><a class="u-email" href="mailto:marsland@bu.edu">marsland@bu.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/robertvsiii"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">robertvsiii</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Postdoctoral Fellow in the Theoretical Biophysics Group at Boston University</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer></body>
+
+</html>
