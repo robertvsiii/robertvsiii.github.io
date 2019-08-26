@@ -16,10 +16,12 @@ Now we download and build Ruby:
 
 We should also add rbenv to our bash profile:
 `echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile`
+
 `source ~/.bash_profile`
 
 Finally, we install Ruby:
 `rbenv install 2.6.3`
+
 `rbenv global 2.6.3`
 
 ## Installing Jekyll and bundler
@@ -49,3 +51,5 @@ Now we are ready to deploy the site. We first build the site by executing the co
 You can customize any aspect of the HTML template by finding the `_layouts` and `_includes` folders for your theme and copying them to the root directory of your project (e.g., `myblog`). To find these folders, execute `bundle show minima` in the terminal (replacing `minima` with the name of your theme if you are using a different theme). Any files in these folders will be used instead of the original theme files with the same name when the site is built. If you want to leave some of the files alone, don't copy them over. 
 
 You can also customize the stylesheet by first finding the stylesheet for your theme (using `bundle show` as above to find the theme directory). In minima, the stylesheet is `main.css` in the `assets` directory. Now we do the same thing as with the HTML template, copying over the file we want to change, with its directory structure -- in this case, creating a directory called `assets` in our root project directory and putting `main.css` there. But now instead of editing `main.css` directly, we're going to do something a little different, in order to allow updates to the `main.css` file in future versions of the theme. We are going to replace `main.css` in our new folder with a new file called `main.scss`. In this file, we put the required frontmatter for a Jekyll file (two rows of three hyphens), followed by `@import "{{ site.theme }}";`. When we run Jekyll, this will create a new `main.css` file, including all the original theme content. But now we can add additional content to the `main.scss` file, which will be appended to the new style sheet.
+
+There's something weird with how GitHub Pages does its file structure, so if we just do the above in the minima theme it doesn't find our new style commands. We have to also go into `head.html` in the `_includes` directory and replace the stylesheet link with `<link rel="stylesheet" href="{{ root_url }}/assets/main.css">`.
