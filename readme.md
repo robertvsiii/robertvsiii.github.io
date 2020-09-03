@@ -8,25 +8,22 @@ Here is a relatively complete set of instructions for setting up a Jekyll site f
 Jekyll is basically like Latex, but for generating HTML instead of PDF's. Your write your site as a series of HTML files and Markdown documents, where the HTML files are templates with scripts for making headers and footers and assembling the Markdown documents into the final site.
 
 ## Installing Homebrew and Ruby
+These instructions change frequently, so please see the Jekyll link above for the most up-to-date instructions.
+
 For Jekyll to work, we first have to install Homebrew, which will allow us to set up the full Ruby development environment required by Jekyll. We can do this by just running this command in the Terminal:
-`ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
 
 Now we download and build Ruby:
-`brew install rbenv ruby-build`
+`brew install ruby`
 
 We should also add rbenv to our bash profile:
-`echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile`
+`echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.zsh_profile`
 
-`source ~/.bash_profile`
-
-Finally, we install Ruby:
-`rbenv install 2.6.3`
-
-`rbenv global 2.6.3`
+`source ~/.zsh_profile`
 
 ## Installing Jekyll and bundler
 With Ruby set up, this is simple:
-`gem install jekyll bundler`
+`gem install --user-install bundler jekyll`
 
 ## Create and serve a new site
 We will create a new site in a new directory called "myblog," which will have the default "minima" theme:
