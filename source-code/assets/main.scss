@@ -1,0 +1,12 @@
+---
+---
+
+@import "{{ site.theme }}";
+img.feat-img {
+	border: 2px solid gray;
+	border-radius: 10px;
+	padding: 5px 5px 5px 5px;
+}
+
+img.feat-img-nobox {
+}
