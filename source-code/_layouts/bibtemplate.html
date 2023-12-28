@@ -1,0 +1,23 @@
+---
+---
+{{reference}}
+
+    {% if entry.notes %}
+    <a href="{{entry.notes}}"><button class="btn btnId btnPub--BibTex" id="b_{{key}}-url" style="outline:none;">Journal</button></a>
+    {% endif %}
+
+    {% if entry.arxiv %}
+    <a href="{{entry.arxiv}}"><button class="btn btnId btnPub--BibTex" id="b_{{key}}-url" style="outline:none;">arXiv</button></a>
+    {% endif %}
+    
+    {% if links.pdf %}
+    <a href="{{ links.pdf }}"><button class="btn btnId btnPub--download" style="outline:none; position:relative;white-space: normal;">PDF</button></a>
+    {% endif %}
+    
+    {% if links['sup.pdf'] %}
+    <a href="{{links['sup.pdf']}}"><button class="btn btnId btnPub--supplement" style="outline:none; position:relative;white-space: normal;">Supplement</button></a>
+    {% endif %}
+
+    {% if links.zip %}
+    <a href="{{links.zip}}"><button class="btn btnId btnPub--supplement" style="outline:none; position:relative;white-space: normal;">Supplement</button></a>
+    {% endif %}
