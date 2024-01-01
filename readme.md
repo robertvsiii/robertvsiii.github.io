@@ -7,6 +7,11 @@ Here is a relatively complete set of instructions for setting up a Jekyll site f
 
 Jekyll is basically like Latex, but for generating HTML instead of PDF's. Your write your site as a series of HTML files and Markdown documents, where the HTML files are templates with scripts for making headers and footers and assembling the Markdown documents into the final site.
 
+## UPDATE: Jekyll on Github-Pages
+Instead of manually compiling every time you update, you can configure github to run the compiler automatically after every commit. (If you're going to change a lot of things, it's more convenient to do this in a codespace and commit all the changes at once, to avoid triggering the compiler every time you save.) 
+
+The list of third-party plugins automatically included in the Github-pages workflow does not include jekyll-scholar. To use this plugin, I had to set up a custom workflow -- and also specify the ruby version to maintain compatibility, following [helpful instructions][https://open-research.gemmadanks.com/tutorials/how-to-use-jekyll-scholar-with-github-pages/] from Gemma Danks. 
+
 ## Installing Homebrew and Ruby
 These instructions change frequently, so please see the Jekyll link above for the most up-to-date instructions.
 
