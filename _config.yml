@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 'Robert Marsland'
-author: Robert A Marsland III
+title: 'Fr. Robert Marsland'
+author: Fr. Robert A Marsland III
 email: marsland@alum.mit.edu
-description: "Shams and delusions are esteemed for soundest truths, while reality is fabulous."
+description: "Naturam totam complectari animo"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: marslandbobby
